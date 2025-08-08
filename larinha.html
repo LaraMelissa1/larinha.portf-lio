@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="larinha.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="apresentacao">
+                <img src="IMG/647b802d-c437-4f9d-9f60-81b774a4abda.jpg" alt="Minha foto" class="avatar">
+                <h1>Lara Melissa</h1>
+                <p>Sou estudante de Técnico de Informática, apaixonada por aprender e sempre buscando evoluir. Gosto de explorar novas tecnologias e transformar conhecimento em prática.</p>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante de Técnico de Informática e adoro estudar. Tenho curiosidade por tecnologia e busco constantemente ampliar meus conhecimentos, seja aprendendo programação, manutenção de computadores ou novas ferramentas.</p>
+            <p>Áreas de interesse: desenvolvimento web, programação, design, etc.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-container">
+                <div class="projeto">
+                    <img src="IMG/03796d5d-b425-41d2-9055-e71d9c7d7df1.jpg" alt="Projeto 1">
+                    <h3>Adapta Nutri</h3>
+                    <p>O Adapta Nutri é um aplicativo voltado para oferecer acompanhamento nutricional acessível e personalizado, especialmente para pessoas com deficiência física, em reabilitação, idosos e quem busca melhorar a alimentação de forma segura.</p>
+                </div>
+                <div class="projeto">
+                    <img src="IMG/4b63bc8e-5446-470c-81dd-b45d70075851.jpg" alt="Projeto 2">
+                    <h3>PASTIF</h3>
+                    <p> O PASTIF é uma solução digital para controle e gestão de pastagens, permitindo que agricultores cadastrem, visualizem e acompanhem o status de seus pastos de forma prática e eficiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo:</p>
+            <ul class="contato-lista">
+                <li>Email: <a href="lara.melissa@estudante.ifmt.edu.br">lara.melissa@estudante.ifmt.edu.br</a></li>
+                <li>GitHub: <a href="https://github.com/seuusuario" target="_blank">https://github.com/LaraMelissa1</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano-atual"></span> LARA MELISSA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Atualiza o ano no rodapé automaticamente
+        document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

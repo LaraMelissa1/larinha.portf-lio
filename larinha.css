@@ -1,0 +1,147 @@
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #181718e9;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #eb11b4de;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(205, 28, 152, 0.849);
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: #100f10df;
+}
+
+.apresentacao {
+    text-align: center;
+    padding: 2rem;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #ec0c87df;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.projeto {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+}
+
+.projeto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.contato-lista {
+    list-style: none;
+}
+
+.contato-lista li {
+    margin-bottom: 0.5rem;
+}
+
+.contato-lista a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contato-lista a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #d50d93;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .projetos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projeto {
+        width: 100%;
+    }
+}
